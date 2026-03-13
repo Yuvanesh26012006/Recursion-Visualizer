@@ -1,0 +1,6 @@
+/* Hide Base44 Badge */
+#base44-badge {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+}

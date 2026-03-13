@@ -1,0 +1,52 @@
+[
+  {
+    "language": "javascript",
+    "inputCall": "factorial(5)",
+    "response": {
+      "functionName": "factorial",
+      "inputCall": "factorial(5)",
+      "steps": [
+        { "type": "call", "nodeId": 0, "parentId": null, "label": "factorial(5)", "params": { "n": 5 }, "isBaseCase": false },
+        { "type": "call", "nodeId": 1, "parentId": 0, "label": "factorial(4)", "params": { "n": 4 }, "isBaseCase": false },
+        { "type": "call", "nodeId": 2, "parentId": 1, "label": "factorial(3)", "params": { "n": 3 }, "isBaseCase": false },
+        { "type": "call", "nodeId": 3, "parentId": 2, "label": "factorial(2)", "params": { "n": 2 }, "isBaseCase": false },
+        { "type": "call", "nodeId": 4, "parentId": 3, "label": "factorial(1)", "params": { "n": 1 }, "isBaseCase": true },
+        { "type": "return", "nodeId": 4, "value": 1, "isBaseCase": true },
+        { "type": "return", "nodeId": 3, "value": 2 },
+        { "type": "return", "nodeId": 2, "value": 6 },
+        { "type": "return", "nodeId": 1, "value": 24 },
+        { "type": "return", "nodeId": 0, "value": 120 }
+      ]
+    }
+  },
+  {
+    "language": "python",
+    "inputCall": "fibonacci(5)",
+    "response": {
+      "functionName": "fibonacci",
+      "inputCall": "fibonacci(5)",
+      "steps": [
+        { "type": "call", "nodeId": 0, "parentId": null, "label": "fibonacci(5)", "params": { "n": 5 }, "isBaseCase": false },
+        { "type": "call", "nodeId": 1, "parentId": 0, "label": "fibonacci(4)", "params": { "n": 4 }, "isBaseCase": false },
+        { "type": "call", "nodeId": 2, "parentId": 1, "label": "fibonacci(3)", "params": { "n": 3 }, "isBaseCase": false },
+        { "type": "call", "nodeId": 3, "parentId": 2, "label": "fibonacci(2)", "params": { "n": 2 }, "isBaseCase": false },
+        { "type": "call", "nodeId": 4, "parentId": 3, "label": "fibonacci(1)", "params": { "n": 1 }, "isBaseCase": true },
+        { "type": "return", "nodeId": 4, "value": 1, "isBaseCase": true },
+        { "type": "call", "nodeId": 5, "parentId": 3, "label": "fibonacci(0)", "params": { "n": 0 }, "isBaseCase": true },
+        { "type": "return", "nodeId": 5, "value": 0, "isBaseCase": true },
+        { "type": "return", "nodeId": 3, "value": 1 },
+        { "type": "call", "nodeId": 6, "parentId": 2, "label": "fibonacci(1)", "params": { "n": 1 }, "isBaseCase": true },
+        { "type": "return", "nodeId": 6, "value": 1, "isBaseCase": true },
+        { "type": "return", "nodeId": 2, "value": 2 },
+        { "type": "call", "nodeId": 7, "parentId": 1, "label": "fibonacci(2)", "params": { "n": 2 }, "isBaseCase": false },
+        { "type": "call", "nodeId": 8, "parentId": 7, "label": "fibonacci(1)", "params": { "n": 1 }, "isBaseCase": true },
+        { "type": "return", "nodeId": 8, "value": 1, "isBaseCase": true },
+        { "type": "call", "nodeId": 9, "parentId": 7, "label": "fibonacci(0)", "params": { "n": 0 }, "isBaseCase": true },
+        { "type": "return", "nodeId": 9, "value": 0, "isBaseCase": true },
+        { "type": "return", "nodeId": 7, "value": 1 },
+        { "type": "return", "nodeId": 1, "value": 3 },
+        { "type": "return", "nodeId": 0, "value": 5 }
+      ]
+    }
+  }
+]
